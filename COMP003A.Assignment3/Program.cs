@@ -49,8 +49,10 @@ namespace COMP003A.Assignment3
             Console.WriteLine("Readiness Category:" + " " + category);
 
             Console.WriteLine("\n");
+            // section to determine readiness status using bool conditions (yes/no)
+            Console.Write("Do you have a valid ID? (yes/no)");
 
-            Console.WriteLine("Readiness Status");
+            string validId = Console.ReadLine();
         }
     }
 }
