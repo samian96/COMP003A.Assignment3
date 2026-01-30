@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace COMP003A.Assignment3
 {
@@ -23,15 +24,6 @@ namespace COMP003A.Assignment3
             string category;
 
             Console.WriteLine("Current Age:" + " " + age);
-
-            if (age < 18)
-            {
-                category = "Minor";
-            }
-            else 
-            {
-                category = "Adult";
-            }
 
             Console.WriteLine("Readiness Category:" + " " + category);
         }
