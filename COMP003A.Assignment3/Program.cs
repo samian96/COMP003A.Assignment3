@@ -56,7 +56,26 @@ namespace COMP003A.Assignment3
 
             Console.Write("Have you completed the Orientation? (yes/no): ");
 
-            string Orient = Console.ReadLine();
+            string orient = Console.ReadLine();
+
+            string readiness;
+
+            bool readinesslevel = validId.ToLower() == "yes";
+
+            bool readinessLevel = orient.ToLower() == "yes";
+
+            if (validId == "yes" && orient == "yes")
+            {
+                readiness = "Ready";
+            }
+            else if (validId != "yes" || orient != "yes")
+            {
+                readiness = "Conditionally Ready";
+            }
+            else
+            {
+                readiness = "Not Ready";
+            }
         }
     }
 }
