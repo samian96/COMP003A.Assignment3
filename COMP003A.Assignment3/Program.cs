@@ -86,11 +86,25 @@ namespace COMP003A.Assignment3
             Console.WriteLine("Readiness Status:" + " " + readiness);
 
             // category selection using a switch operator 
+
             Console.WriteLine("\n");
 
-            Console.WriteLine("Select a guifance option:");
+            Console.WriteLine("Select a guidance option:");
 
             Console.WriteLine("1 - Academic Planning\n2 - Personal Planning\n3 - Career Planning");
+
+            Console.Write("Enter Choice: ");
+
+            string guide = Console.ReadLine();
+
+            switch (guide)
+            {
+                case "1":
+                    Console.WriteLine();
+                    break;
+            }
+
+
         }
     }
 }
