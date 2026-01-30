@@ -47,6 +47,10 @@ namespace COMP003A.Assignment3
                 }
             }
             Console.WriteLine("Readiness Category:" + " " + category);
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Readiness Status");
         }
     }
 }
