@@ -10,13 +10,15 @@
 
             Console.WriteLine("\n");
 
-            Console.WriteLine($"Current Year:" + year);
+            Console.WriteLine("Current Year:" + year);
 
-            Console.Write("Please enter your birth year:");
+            Console.Write("Please enter your birth year: ");
 
             int yOb = int.Parse(Console.ReadLine());
 
             int age = year - yOb;
+
+            Console.WriteLine("Current Age:" + " " + age);
         }
     }
 }
