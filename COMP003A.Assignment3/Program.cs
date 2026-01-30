@@ -84,6 +84,11 @@ namespace COMP003A.Assignment3
             Console.WriteLine("\n");
 
             Console.WriteLine("Readiness Status:" + " " + readiness);
+
+            // category selection using a switch operator 
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Select a guifance option:");
         }
     }
 }
