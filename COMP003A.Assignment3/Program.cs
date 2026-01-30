@@ -89,6 +89,8 @@ namespace COMP003A.Assignment3
             Console.WriteLine("\n");
 
             Console.WriteLine("Select a guifance option:");
+
+            Console.WriteLine("1 - Academic Planning\n2 - Personal Planning\n3 - Career Planning");
         }
     }
 }
