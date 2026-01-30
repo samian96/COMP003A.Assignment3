@@ -24,11 +24,14 @@ namespace COMP003A.Assignment3
 
             Console.WriteLine("Current Age:" + " " + age);
 
-            if (age > 18)
+            if (age < 18)
             {
-                
+                category = "Minor";
             }
-
+            else 
+            {
+                category = "Adult";
+            }
         }
     }
 }
