@@ -32,6 +32,8 @@ namespace COMP003A.Assignment3
             {
                 category = "Adult";
             }
+
+            Console.WriteLine("Readiness Category:" + " " + category);
         }
     }
 }
