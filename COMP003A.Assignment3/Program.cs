@@ -98,7 +98,8 @@ namespace COMP003A.Assignment3
             string guide = Console.ReadLine();
 
             Console.WriteLine("\n");
-
+            // switch is better used for category number selection, over a range variable. 
+            // If the user does not put in an available option, default is ran, order is important with logic for switches
             switch (guide)
             {
                 case "1":
