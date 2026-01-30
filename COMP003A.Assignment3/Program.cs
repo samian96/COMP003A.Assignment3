@@ -11,7 +11,9 @@
             Console.WriteLine("\n");
             Console.WriteLine("\n");
 
+            Console.WriteLine("Please enter your birth year.");
 
+            int yOb = int.Parse(Console.ReadLine());
         }
     }
 }
