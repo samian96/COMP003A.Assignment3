@@ -63,7 +63,9 @@ namespace COMP003A.Assignment3
             bool readinesslevel = validId.ToLower() == "yes";
 
             bool readinessLevel = orient.ToLower() == "yes";
-
+            // if else checks if both are equal, only validId is eaqual, or neither.
+            // if validId is not equal to yes, but orient is, it should appear as not ready
+            // validId is the manditory factor for this if else
             if (validId == "yes" && orient == "yes")
             {
                 readiness = "Ready";
