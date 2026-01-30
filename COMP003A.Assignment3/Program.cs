@@ -10,7 +10,9 @@
 
             Console.WriteLine("\n");
 
-            Console.WriteLine("Please enter your birth year.");
+            Console.WriteLine($"Current Year:" + year);
+
+            Console.Write("Please enter your birth year:");
 
             int yOb = int.Parse(Console.ReadLine());
 
