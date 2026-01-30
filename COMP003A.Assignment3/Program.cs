@@ -50,9 +50,13 @@ namespace COMP003A.Assignment3
 
             Console.WriteLine("\n");
             // section to determine readiness status using bool conditions (yes/no)
-            Console.Write("Do you have a valid ID? (yes/no)");
+            Console.Write("Do you have a valid ID? (yes/no): ");
 
             string validId = Console.ReadLine();
+
+            Console.Write("Have you completed the Orientation? (yes/no): ");
+
+            string Orient = Console.ReadLine();
         }
     }
 }
