@@ -97,12 +97,24 @@ namespace COMP003A.Assignment3
 
             string guide = Console.ReadLine();
 
+            Console.WriteLine("\n");
+
             switch (guide)
             {
                 case "1":
-                    Console.WriteLine();
+                    Console.WriteLine("Meet with an academic advisor");
+                    break;
+                case "2":
+                    Console.WriteLine("Meet with a tutor to discuss personal planning");
+                    break;
+                case "3":
+                    Console.WriteLine("Meet with a counselor to discuss career paths");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input");
                     break;
             }
+             
 
 
         }
