@@ -1,4 +1,6 @@
-﻿namespace COMP003A.Assignment3
+﻿using System.ComponentModel;
+
+namespace COMP003A.Assignment3
 {
     internal class Program
     {
@@ -18,7 +20,15 @@
 
             int age = year - yOb;
 
+            string category;
+
             Console.WriteLine("Current Age:" + " " + age);
+
+            if (age > 18)
+            {
+                
+            }
+
         }
     }
 }
