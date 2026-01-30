@@ -20,6 +20,8 @@ namespace COMP003A.Assignment3
 
             string input = (Console.ReadLine());
 
+            Console.WriteLine("\n");
+
             int yOb;
             string category;
 
