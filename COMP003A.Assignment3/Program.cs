@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Runtime.InteropServices.Marshalling;
 
 namespace COMP003A.Assignment3
@@ -17,14 +18,30 @@ namespace COMP003A.Assignment3
 
             Console.Write("Please enter your birth year: ");
 
-            int yOb = int.Parse(Console.ReadLine());
+            string input = (Console.ReadLine());
 
-            int age = year - yOb;
-
+            int yOb;
             string category;
 
-            Console.WriteLine("Current Age:" + " " + age);
+            if (!int.TryParse(input, out yOb))
+            {
+                category = "Invalid Input: Date of Birth must be written numerically";
+            }
+            else
+            {
+                int age = year - yOb;
 
+                Console.WriteLine("Current Age:" + " " + age);
+
+                if (age < 18)
+                {
+                    category = "Minor";
+                }
+                else
+                {
+                    category = "Adult";
+                }
+            }
             Console.WriteLine("Readiness Category:" + " " + category);
         }
     }
