@@ -64,21 +64,24 @@ namespace COMP003A.Assignment3
 
             bool readinessLevel = orient.ToLower() == "yes";
 
-            if (validId != "yes" && orient != "yes")
+            if (validId == "yes" && orient == "yes")
             {
-                readiness = "Not Ready";
+                readiness = "Ready";
             }
             else
             {
-               if (validId == "yes" || orient != "yes")
+               if (validId == "yes" && orient != "yes")
                 {
                     readiness = "Conditionally ready";
                 }
-                else
+                else 
                 {
-                    readiness = "Ready";
+                    readiness = "Not Ready";
                 }
-            } 
+            }
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Readiness Status:" + " " + readiness);
         }
     }
 }
